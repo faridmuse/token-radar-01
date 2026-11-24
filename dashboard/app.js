@@ -426,6 +426,7 @@
 
   readHash();
   render();
+  if (window.__radarCompare) window.__radarCompare.boot(DATA);
   window.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && dialog.open) dialog.close();
   });
